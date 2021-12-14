@@ -1,0 +1,6 @@
+<form>
+<a href="zapros1.php">1 запрос</a><br><br>
+<a href="zapros2.php">2 запрос</a><br><br>
+<a href="zapros3.php">3 запрос</a><br><br>
+<a href="dobavlenie.php">Добавить</a><br><br>
+</form>

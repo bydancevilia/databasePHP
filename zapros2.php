@@ -21,6 +21,7 @@ $rows=mysqli_fetch_all($result,MYSQLI_ASSOC);
 ?>
 </select>
 <input type="submit" name="submit" value="Поиск"><br>
+<a href="osnova.php">Назад</a><br><br>
 </form>
 <?php
 if($_GET['submit'])

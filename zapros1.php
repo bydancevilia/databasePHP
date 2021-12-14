@@ -4,6 +4,7 @@ require_once 'connect.php';
 <form action="zapros1.php" method="GET">
 Фамилия владельца помещения:<input type="text" name="NameAuthor"><br><br>
 <input type="submit" name="submit" value="Поиск"><br>
+<a href="osnova.php">Назад</a><br><br>
 </form>
 <?php
 if($_GET['submit'])
