@@ -2,8 +2,8 @@
 require_once 'connect.php';
 ?>
 <form action="zapros3.php" method="GET">
-Количество комнат:<input type="text" name="kolvo_komnat"><br><br>
-<input type="submit" name="submit" value="Поиск"><br>
+Количество комнат: <input type="text" name="kolvo_komnat"><br><br>
+<input type="submit" name="submit" value="Поиск"><br><br>
 <a href="osnova.php">Назад</a><br><br>
 </form>
 <?php

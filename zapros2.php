@@ -2,7 +2,7 @@
 require_once 'connect.php';
 ?>
 <form action="zapros2.php" method="GET">
-Владелец:<select name="Vladelec">
+Владелец: <select name="Vladelec">
 <?php
 $result=mysqli_query($link,"SELECT
   vladelec.Last_Name
@@ -20,8 +20,9 @@ $rows=mysqli_fetch_all($result,MYSQLI_ASSOC);
 }
 ?>
 </select>
-<input type="submit" name="submit" value="Поиск"><br>
-<a href="osnova.php">Назад</a><br><br>
+<br><br>
+<input type="submit" name="submit" value="Поиск"><br><br>
+<a href="osnova.php">Назад</a><br><br><br>
 </form>
 <?php
 if($_GET['submit'])
@@ -45,9 +46,13 @@ WHERE vladelec.Last_Name = '$_GET[Vladelec]'");
 $rows=mysqli_fetch_all($result,MYSQLI_ASSOC);
 foreach ($rows as $row)
 {
+	 echo "<b>Имя: </b>";
         print($row['Name']."<br>");
+		 echo "<b>Фамилия: </b>";
         print($row['Last_Name']."<br>");
+		 echo "<b>Номер: </b>";
         print($row['nomer_telephona']."<br>");
+		 echo "<b>Сдает квартиру по адресу: </b>";
         print($row['adres']."<br>");
 }
 

@@ -3,12 +3,12 @@ require_once 'connect.php';
 ?>
 <form action="dobavlenie.php" method="GET">
 <br>
-Адрес помещения:<input type="text" name="Adres"><br><br>
-Количество комнат:<input type="text" name="Komnati"><br><br>
-Этаж:<input type="text" name="Etag"><br><br>
-Балкон:<input type="text" name="Balkon"><br><br>
-Стоимость в сутки:<input type="text" name="Stoimost"><br><br>
-Владелец:<select name="Vladelec">
+Адрес помещения: <input type="text" name="Adres"><br><br>
+Количество комнат: <input type="text" name="Komnati"><br><br>
+Этаж: <input type="text" name="Etag"><br><br>
+Балкон: <input type="text" name="Balkon"><br><br>
+Стоимость в сутки: <input type="text" name="Stoimost"><br><br>
+Владелец: <select name="Vladelec">
 <?php
 $result=mysqli_query($link,"SELECT
   vladelec.id_vladelec,
@@ -27,7 +27,7 @@ $rows=mysqli_fetch_all($result,MYSQLI_ASSOC);
 
 }
 ?>
-</select>
+</select><br><br>
 <input type="submit" name="submit" value="Добавить"><br><br>
 <a href="osnova.php">Назад</a><br><br>
 </form>
